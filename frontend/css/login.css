@@ -109,6 +109,20 @@ body * {
     font-size: 0.93rem;
 }
 
+a {
+    color: #16d31f;
+
+}
+
+a:hover {
+    color: #16d31f;
+    font-size: 16px;
+}
+
+p {
+    font-size: 12px;
+    text-align: center;
+}
 
 @media only screen and (max-width: 950px){
     .card-login{
