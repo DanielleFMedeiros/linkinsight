@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça login<br> E entre no chatbot</h1>
+            <img src="assets/connected-world-animate.svg" class="left-login-image" alt="Astronauta animação">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Login</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha">             
+                </div>
+                <button class="btn-login" onclick="login()">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            // Simulando verificação de usuário e senha
+            const usuario = document.getElementById('usuario').value;
+            const senha = document.getElementById('senha').value;
+
+            // Aqui você faria uma requisição AJAX para verificar no backend
+
+            // Simulando verificação simples para propósitos de exemplo
+            if (usuario === 'usuario' && senha === 'senha') {
+                // Login bem-sucedido, redirecionar para chatbot.html
+                window.location.href = 'chatbot.html';
+            } else {
+                // Login falhou, você pode exibir uma mensagem de erro aqui se desejar
+                alert('Usuário ou senha incorretos. Tente novamente.');
+            }
+        }
+    </script>
+</body>
+</html>
